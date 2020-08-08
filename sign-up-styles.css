@@ -83,16 +83,22 @@ li a{
 
 /* Sign Up*/
 .sign-up{
-    width: 100%;
-    background: var(--main-background-color);
+    width: 100vw;
+    height: 80vh; 
+    background: url(images/sign-up-background.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
     font-family: var(--body-font);
-    display: flex; 
-    flex-flow: row; 
-    justify-content: space-around; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
 }
 
 .text{
-    color: #fff; 
+    color: black;
+    position: relative; 
+    top: 30%; 
+    left: 2%;  
 }
 
 .text-h1{
@@ -111,7 +117,10 @@ li a{
     justify-content: space-evenly; 
     align-content: center; 
     width: 450px; 
-    height: 275px; 
+    height: 400px; 
+    border-radius: 3px; 
+    position: relative;
+    top: 15%; 
 }
 
 .sign-up-form{
@@ -121,12 +130,15 @@ li a{
     width: 375px; 
     height: 80%; 
     position: relative; 
-    left: 4%; 
     top: -5%; 
+    left: 7%; 
 }
 
 .input-box{
-    padding: 6px; 
+    padding: 17px;
+    border-radius: 3px;  
+    border: 1px solid	#D3D3D3;
+    font-size: 12px; 
 }
 
 .trial{
@@ -137,7 +149,7 @@ li a{
 }
 
 .submit-button{
-    padding: 7px; 
+    padding: 10px; 
     background-color: var(--header-color);
     font-size: 15px; 
     font-family: var(--body-font);
@@ -147,3 +159,118 @@ li a{
     border-radius: 5px; 
     cursor: pointer;
 }
+
+/* Onboarding Info*/
+.onboarding-info{ /* parent position it relative */ 
+    width: 100%; 
+    background: #fff; 
+    position: absolute;
+    font-family: var(--body-font);  
+}
+
+.content{ /* child position relative */ 
+    width: 50vw; 
+    position: relative;
+    background: #fff; 
+    left: 25%; 
+    padding-top: 5%; 
+    /* border: 3px solid black;  */
+}
+
+.facts{
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+
+.question{
+    font-weight: 550; 
+    font-size: 20px; 
+}
+
+.statistics{
+    height: 120px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.data{
+    font-weight: 600; 
+    font-size: 60px; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+.data-caption{
+    font-size: 10px; 
+    color: #808080; 
+    margin-top: 0; 
+}
+
+/* Onboarding process */ 
+.onboarding-process{ /* child position relative */ 
+    width: 50vw; 
+    position: relative;
+    background:	#E0FFFF; 
+    left: 25%; 
+    padding-top: 10px; 
+    padding-bottom: 20px;
+    margin-top: 50px;  
+    /* border: 3px solid black;  */
+}
+
+.get-started{
+    font-size: 20px; 
+    font-weight: 700; 
+    color:	#008080;
+    margin-left: 150px; 
+    margin-top: 5px; 
+}
+
+.order{
+    display: flex; 
+    flex-direction: row;  
+    justify-content: space-between; 
+}
+
+.step{
+    background: #fff; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 150px; 
+    height: 200px; 
+}
+
+.step img{
+    width: 150px; 
+    height: 75px; 
+    object-fit: contain; 
+}
+
+.number{
+    font-size: 20px;
+    font-weight: 700; 
+    color: 	#5F9EA0;
+}
+
+.instruction{
+    font-size: 15px;
+}
+
+.step .instruction{
+    text-align: center; 
+}
+
+.one{
+    margin-left: 10px; 
+}
+
+.three{
+    margin-right: 10px; 
+}
+
