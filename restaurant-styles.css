@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap);
+:root{
+    --header-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --nav-link-color: #707070;
+    --header-color: #F69E7B;
+    --main-background-color: #383E56; 
+    --body-font: 'DM Sans', sans-serif;
+    --restaurant-font: 'Noto Sans TC', sans-serif;
+};
+
+html{
+    font-size: 10px; 
+}
+
+body{
+    background-color: #fff;
+}
+
+/* Header */ 
+header{
+    width: 100vw; 
+    margin: 0%; 
+    padding: 0%; 
+    background-color: var(--header-color);
+    padding-top: 5%; 
+    padding-bottom: 5%; 
+    margin-top: 0; 
+}
+
+
+li, a{
+    text-decoration: none; 
+}
+
+
+.logo{
+    font-weight: 550; 
+    font-size: 22px;
+    color: var(--main-background-color);
+    cursor: pointer;
+    font-family: var(--header-font);
+    position: relative;
+    left: 20%; 
+}
+
+
+.nav-bar{
+    position: relative; 
+    align-items: center; 
+    display: flex; 
+    justify-content: space-between; 
+    right: 10%; 
+}
+
+.nav-link{
+    list-style: none; 
+}
+
+li a{
+    color: var(--nav-link-color);
+    border: 1px solid var(--nav-link-color);
+    border-radius: 50px; 
+    padding: 5px 25px; 
+    font-weight: 500; 
+    font-family: var(--header-font);
+}
+
+
+.nav-link li{
+    display: inline-block; 
+    padding: 0 10px; 
+    text-transform: uppercase;
+    font-size: 13px; 
+    font-weight: bold; 
+}
+
+.nav-link li a{
+    transition: all 0.3s ease 0s; 
+}
+
+.nav-link li a:hover{
+    color: var(--header-color);
+    background-color: var(--main-background-color);
+}
+
+/* Restaurant Info */ 
+.restaurant{
+    width: 100vw; 
+}
+
+.restaurant-pic{
+    width: 100vw; 
+    height: 35vh; 
+    margin-top: 35px; 
+    background: url(images/restaurant-background-1.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.restaurant-info{
+    font-family: var(--body-font);
+    width: 50%;
+    background: #fff;  
+}
+
+.resto-name{
+    font-size: 25px; 
+    margin-bottom: 0; 
+}
+
+.extra-info{
+    font-size: 10px; 
+    font-weight: 200; 
+}
+
+.more-info{
+    color: #00B000;
+    cursor: pointer; 
+}
+
+.resto-name, .extra-info{
+    margin-left: 30px; 
+}
+
+.ratings{
+    color: #808080;
+}
+
+/* Restaurant Details */
+.restaurant-details{
+    width: 100vw; 
+    background: #fff;
+    margin-top: 50px;  
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+.dish-and-reviews{
+    width: 50vw; 
+    margin-left: 50px;
+    /* border: 3px solid black;  */
+}
+
+.dish{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080; 
+}
+
+.text{
+    font-family: var(--restaurant-font);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.dish-name{
+    font-size: 18px; 
+    margin-bottom: 2px; 
+}
+
+.dish-details{
+    font-size: 15px; 
+    color: #808080; 
+}
+
+.price{
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.dish img{
+    width: 30%; 
+    object-fit: cover; 
+}
+
+.reviews{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+    margin-top: 75px; 
+}
+
+.reviews img{
+    width: 50px;
+    height: 30px; 
+    object-fit: cover; 
+}
+
+.profile-about{
+    font-family: var(--restaurant-font);
+    font-size: 12px; 
+}
+
+.person{
+    font-weight: bold; 
+}
+
+.person-info{
+    color: #808080; 
+}
+
+.chef-info{
+    width: 35vw; 
+    margin-right: 40px; 
+}
+
+.chef-img{
+    width: 100%; 
+    height: 700px; 
+    object-fit: cover;  
+}
+
+.about-chef{
+    font-family: var(--restaurant-font);
+    color: var(--main-background-color);
+    text-align: center; 
+    font-size: 18px; 
+    padding: 5px 10px; 
+}
