@@ -336,7 +336,7 @@ p{
 
 .column {
     float: left;
-    padding: 10px;
+    padding: 20px;
 }
 
 .left {
@@ -349,3 +349,17 @@ p{
     padding: 0 20px;
 }
   
+hr {
+    width: 100%;
+}
+
+.column-left {
+    float: left;
+    padding: 0px 20px;
+    flex: 25%;
+}
+
+.column-right {
+    flex: 45%;
+    padding: 0px 20px;
+}
