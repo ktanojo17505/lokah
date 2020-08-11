@@ -3,87 +3,59 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lokah Sign Up Page</title>
+    <title>Lokah Sign Up </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="sign-up-styles.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <header>
-        <div class="nav-bar">
-            <a class="logo" href="index.html">Lokah</a>
-            <nav>
-                <ul class="nav-link">
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="sign-up.html">Sign Up</a></li>
-                    <li><a href="#">Log In</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- End of Nav Bar -->
-    <div class="sign-up">
+    <div class="sign-up-form">
         <div class="text">
-            <h1 class="text-h1">Increase your takeout sales</h1>
-            <h2 class="text-h2">Feature your business 
-                on Doordash <br>and reach new customers</h2>
+            <h1 class="logo">Lokah</h1>
+            <h2 class="caption">Let's get started</h2>
+
         </div>
-        <div class="sign-up-box">
-            <p class="trial">Start your 30 day free trial</p>
-            <form class="sign-up-form">
-                <input class="input-box"type="text" name="restauraunt-name" placeholder="Restaurant Name">
-                <input class="input-box" type="text" name="restaurant-address" placeholder="Restaurant Address">
-                <input class="input-box" type="text" name="email" placeholder="Email">
-                <input class="input-box" type="text" name="mobile-number" placeholder="Mobile Phone eg 415888888">
-                <input class="submit-button" type="button" value="Get Started">
-            </form>
-        </div>
-    </div>
-    <!-- End of Sign Up -->
-    <div class="onboarding-info">
-        <div class="content">
-            <p class="question">Why delivery?</p>
-            <div class="facts">
-                <div class="statistics">
-                    <p class="data">60%</p>
-                    <p class="data-caption">Of operators surveyed
-                        that offering delivery has generated incremental
-                        sales </p>
+        <form>
+            <div class="questions">
+                <div class="name spacing">
+                    <div class="question">
+                        <p class="category">First Name</p>
+                        <input class="input-box" type="text" name="first-name">
+                    </div>
+                    <div class="question right">
+                        <p class="category">Last Name</p>
+                        <input class="input-box" type="text" name="last-name">
+                    </div>
                 </div>
-                <div class="statistics">
-                    <p class="data">1 in 4</p>
-                    <p class="data-caption">Of customers surveyed 
-                        say they spend more on off-premise orders</p>
+                <div class="personal-info spacing">
+                    <p class="category">Email</p>
+                    <input class="input-box" type="text" name="email">
                 </div>
-                <div class="statistics">
-                    <p class="data">77%</p>
-                    <p class="data-caption">The expected rise in U.S 
-                        specific food delivery sales from 2017 to 2022</p>
+                <div class="personal-info spacing ">
+                    <p class="category">Mobile Number</p>
+                    <input class="input-box" type="text" name="phone-number">
                 </div>
+                <div class="personal-info spacing ">
+                    <div class="password">
+                        <p class="category">Password</p>
+                        <p class="required">at least 8 characters</p>
+                    </div>
+                    <input class="input-box password-box" type="text" name="password">
+                </div>
+                <input class="sign-up-button" type="button" value="Sign Up">
             </div>
-        </div>
-        <!-- End of Facts -->
-        <div class="onboarding-process">
-            <p class="get-started">3 simple steps to get started</p>
-            <div class="order">
-                <div class="step one">
-                    <p class="number">1</p>
-                    <img src="images/restaurant-icon.png" alt="">
-                    <p class="instruction">Tell us about your restaurant</p>
-                </div>
-                <div class="step two ">
-                    <p class="number">2</p>
-                    <img src="images/menu-icon.jpg" alt="">
-                    <p class="instruction">Upload your menu</p>
-                </div>
-                <div class="step three">
-                    <p class="number">3</p>
-                    <img src="images/delivery-icon.jpg" alt="">
-                    <p class="instruction">You cook, we deliver</p>
-                </div>
+        </form>
+        <div class="contact-info">
+            <div class="get-to-know">
+                <h3 class="title">Get to Know Us</h3>
+                <a class="link" href="about_us.html">About Us</a>
+                <a class="link" href="#">LinkedIn</a>
+            </div>
+            <div class="business">
+                <h3 class="title">Business</h3>
+                <a class="link" href="partner-page.html">Be a Partner Restaurant</a>
             </div>
         </div>
     </div>
-    <!-- End of How to Get Started -->
 </body>
 </html>
