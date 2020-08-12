@@ -8,7 +8,7 @@
 
 html{
     font-size: 10px; 
-    font-family: var(--main-font);
+    font-family: var(--main-font); 
     box-sizing: border-box; 
 }
 
@@ -16,10 +16,10 @@ body{
     background-color: var(--secondary-color);
 }
 
-/* Sign up form */ 
-.sign-up-form{
+/* Log In Form */
+.log-in-form{
     width: 53vw; 
-    background: var(--main-color); 
+    background: var(--main-color);
     margin-top: 0; 
     position: relative; 
     left: 25%; 
@@ -38,8 +38,8 @@ body{
 
 .logo{
     font-size: 2.5rem; 
-    color: var(--button-color);
-    margin-bottom: 0;  
+    color: var(--button-color); 
+    margin-bottom: 0; 
 }
 
 .caption{
@@ -48,22 +48,22 @@ body{
     margin-top: 0; 
 }
 
-.questions{
+form{
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-content: center; 
-    padding-right: 6%; 
+    padding-right: 6%;
     padding-left: 6%; 
 }
 
 .category{
     font-weight: bold; 
     font-size: 1.2rem; 
-    color: var(--secondary-color); 
-    margin-bottom: 0.5rem; 
+    color: var(--secondary-color);
     position: relative; 
     left: 0.5rem; 
+    margin-bottom: 0.5rem; 
 }
 
 .input-box{
@@ -72,94 +72,42 @@ body{
     border: 1px solid var(--border-color);
     padding-top: 0.7rem; 
     padding-bottom: 0.7rem; 
-}
-
-.name{
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
+    width: 100%; 
 }
 
 .password{
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
-    margin-bottom: 0; 
 }
 
-.password-box{
-    margin-top: -0.5rem; 
-}
-
-.required{
+.password a{
     font-weight: bold; 
+    font-size: 1.2rem; 
     color: var(--border-color); 
-    font-size: 1.2rem; 
-    position: relative; 
-    right: 1rem; 
+    margin-bottom: -1%; 
+    text-decoration: none; 
+    cursor: pointer;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
 }
 
-.personal-info .input-box{
-    width: 100%; 
-}
-
-.sign-up-button{
+.log-in-button{
     font-size: 1.2rem; 
     font-weight: bold; 
-    color: var(--main-color);
+    color: var(--main-color); 
     background: var(--button-color); 
     border-radius: 1.9rem; 
     outline: none; 
-    border: 1px solid var(--border-color); 
+    border: 1px solid var(--border-color);
     padding-top: 0.7rem; 
     padding-bottom: 0.7rem; 
     margin-top: 4rem; 
     margin-bottom: 8rem; 
 }
 
-.spacing{
-    margin-top: 1.5rem; 
-    margin-bottom: 1.5rem; 
-}
-
 .question{
-    width: 100%; 
-}
-
-.question .input-box{
-    width: 85%; 
-}
-
-.right{
-    position: relative; 
-    left: 7%; 
-}
-
-/* Contact Info */ 
-
-.contact-info{
-    background: var(--secondary-color); 
-    width: 100%; 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    padding-top: 5%; 
-    padding-bottom: 5%; 
-}
-
-.get-to-know, .business{
-    display: flex; 
-    flex-direction: column; 
-}
-
-.title{
-    color: var(--main-color); 
-    font-size: 2rem; 
-}
-
-.link{
-    color: var(--main-color); 
-    font-size: 1.5rem; 
-    text-decoration: none; 
+    margin-top: 1rem; 
     margin-bottom: 1rem; 
 }
