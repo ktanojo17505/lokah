@@ -1,0 +1,30 @@
+:root{
+    --main-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --dark-blue: #383E56;
+    --white: #fff;  
+    --grey: #707070;
+    --peach: #F69E7B; 
+}
+
+html{
+    font-size: 10px; 
+    font-family: var(--main-font); 
+}
+
+body{
+    background: var(--white); 
+    display: flex; 
+    flex-direction: row; 
+}
+
+/* Side Bar */
+.side-bar{
+    background-color: var(--dark-blue); 
+    width: 30vw; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    margin: 0;  
+}
+
+
