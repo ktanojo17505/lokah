@@ -256,7 +256,7 @@ header{
 .line{
     margin-right: 5%; 
     margin-left: 5%; 
-    margin-top: 10%; 
+    margin-top: 5%; 
     border: 0.5px solid var(--grey); 
 }
 
@@ -274,7 +274,7 @@ header{
     font-size: 2.5rem; 
     color: var(--peach); 
     text-transform: uppercase; 
-    margin-bottom: 8%; 
+    margin-bottom: 5%; 
 }
 
 .food-grid{
@@ -337,8 +337,98 @@ header{
     border-radius: 0.2rem; 
     position: relative; 
     left: 39%; 
+    cursor: pointer;
 }
 
+/* The Big Guide */
+.food-guide{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 65vw; 
+    position: relative; 
+    left: 15%; 
+    margin-top: 5%; 
+}
+
+.the-big-guide{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    border: 1px solid black; 
+}
+
+.the-big-guide img{
+    width: 100%; 
+    object-fit: cover; 
+    z-index: 50; 
+}
+
+.the-big-guide h4{
+    background-color: var(--peach); 
+    color: var(--white); 
+    text-transform: uppercase;
+    font-size: 2.5rem; 
+    text-align: center; 
+    padding: 1rem; 
+    width: 30%; 
+    margin-bottom: -3%; 
+    z-index: 100; 
+    position: relative; 
+    left: 35%; 
+    border-radius: 7.1rem; 
+    cursor: none; 
+}
+
+.articles{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+.article-titles{
+    font-family: var(--secondary-font);  
+}
+
+.article-titles h4{
+    font-size: 3rem; 
+    color: var(--navy-blue); 
+    font-weight: bold; 
+}
+
+.article-titles p{
+    font-size: 1.2rem; 
+    color: var(--navy-blue);
+    font-weight: bold; 
+}
+
+.article-titles a{
+    font-size: 1.2rem; 
+    color: var(--peach); 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+}
+
+.article-box{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    height: 12vh; 
+    margin: 2rem 0; 
+}
+
+.article-box img{
+    object-fit: contain; 
+}
+
+.article-box p{
+    font-family: var(--secondary-font); 
+    line-height: 2rem; 
+    font-weight: bold; 
+    color: var(--navy-blue); 
+}
 
 
 
