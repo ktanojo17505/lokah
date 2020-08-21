@@ -12,10 +12,15 @@
 html{
     font-size: 10px; 
     font-family: var(--main-font);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
     background-color: var(white);
+    overflow-x: hidden; 
+    max-width: 100%; 
+    margin: 0; 
 }
 
 /* Header */
@@ -459,7 +464,7 @@ header{
     align-items: center; 
     margin-top: 10%; 
     position: relative; 
-    left: 5%; 
+    left: 10%; 
     margin-bottom: 10%; 
 }
 
@@ -510,10 +515,14 @@ footer{
     margin-right: 5%
 }
 
+.logo{
+    margin-top: 0; 
+}
+
 .list-container{
     margin-left: 3%; 
     margin-right: 3%; 
-    margin-top: 3%; 
+    margin-top: 0; 
 }
 
 .subject{
