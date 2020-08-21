@@ -25,10 +25,11 @@ body{
 
 /* Header */
 header{
+    padding-top: 2%; 
     width: 100vw; 
     height: 10vh; 
     margin: 0%; 
-    padding: 0%; 
+    /* padding: 0%;  */
 }
 
 

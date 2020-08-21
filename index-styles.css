@@ -29,6 +29,7 @@ header{
     height: 10vh; 
     margin: 0%; 
     padding: 0%; 
+    padding-top: 2%; 
 }
 
 
@@ -483,6 +484,7 @@ header{
     color: var(--navy-blue); 
     background-color: var(--peach); 
     margin-bottom: 0; 
+    text-align: center;
 }
 
 .become-partner p{
