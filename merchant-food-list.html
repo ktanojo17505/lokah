@@ -9,90 +9,28 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="side-bar">
-        <h1 class="logo">Lokah</h1>
-        <div class="deliveries">
-            <a href="#">
-                <div class="order">
-                    <p class="order-num">#001</p>
-                    <p class=item>2 Items for Joanne</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="order">
-                    <p class="order-num">#002</p>
-                    <p class=item>1 item for Jack</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="order">
-                    <p class="order-num">#003</p>
-                    <p class=item>1 item for Kiara</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="order">
-                    <p class="order-num">#004</p>
-                    <p class=item>1 item for Kiara</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="order">
-                    <p class="order-num">#005</p>
-                    <p class=item>1 item for Kiara</p>
-                </div>
-            </a>
-        </div>
-        <div class="out-for-delivery">
-            <div class="title">
-                <hr class="line">
-                <h3 class="description">Out For Delivery</h3>
-                <hr class="line">
-            </div>
-            <p>#001</p>
-            <p>#002</p>
-            <p>#003</p>
-            <p>#004</p>
-            <p>#005</p>
-            <p>#006</p>
-        </div>
-        <div class="recently-completed">
-            <div class="title">
-                <hr class="line">
-                <h3 class="description">Recently Completed</h3>
-                <hr class="line">
-            </div>
-            <p>#010</p>
-            <p>#011</p>
-            <p>#012</p>
-        </div>
+    <header>
+        <span style = "font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776; open</span>
+    </header>
+    <div id = "menubar" class="sidenav">
+        <a href="javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><img src = "#">ORDERS</a>
+        <a href="#"><img src = "#">MENU</a>
+        <a href="#"><img src = "#">OUT FOR DELIVERY</a>
+        <a href="#"><img src = "#">HOW TO GUIDE</a>
+        <a href="#"><img src = "#">RECENTLY COMPLETED</a>
     </div>
-    <div class="specified-delivery">
-        <div class="delivery">
-            <p class="delivery-num">Order #001</p>
-            <p class="scheduled-delivery">Scheduled Delivery 12:30PM</p>
-            <p class="address-date">Jalan Permata Hijau Raya Blok S/7</p>
-            <p class="address-date">October 8th 2020</p>
-        </div>
-        <hr>
-        <div class="dish">
-            <div class="dish-name">2 Egg Tart</div>
-            <div class="amount">Rp. 100,000</div>
-        </div>
-        <div class="payment">
-            <div class="subtotal">
-                <div class="title">Subtotal</div>
-                <div class="amount">Rp. 100,000</div>
-            </div>
-            <div class="tax">
-                <div class="title">Tax</div>
-                <div class="amount">Rp. 25,000</div>
-            </div>
-            <div class="paid">
-                <div class="title">Paid</div>
-                <div class="amount">Rp. 125,000</div>
-            </div>
-        </div>
+    <div class ="food items">
+        Sample
     </div>
+    <script>
+        function openNav() {
+            document.getElementById("menubar").style.width = "20%";
+        }
+
+        function closeNav() {
+            document.getElementById("menubar").style.width = "0";
+        }
+    </script>
 </body>
 </html>
