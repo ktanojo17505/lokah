@@ -1,0 +1,108 @@
+:root{
+    --main-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --dark-blue: #383E56;
+    --white: #fff;  
+    --grey: #707070;
+    --peach: #F69E7B; 
+}
+
+html{
+    font-size: 10px; 
+    font-family: var(--main-font); 
+}
+
+body{
+    background: var(--white); 
+    display: flex; 
+    flex-direction: row; 
+}
+
+/* Side Bar */
+
+/* Side Bar Part: Current Orders */
+.side-bar{
+    background-color: var(--dark-blue); 
+    width: 30vw; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    margin: 0;  
+    overflow: hidden;
+
+}
+
+.logo{
+    text-transform: uppercase; 
+    font-weight: bold; 
+    color: var(--white); 
+    font-size: 2.5rem; 
+    text-align: center; 
+}
+
+.deliveries a{
+    text-decoration: none; 
+    padding-bottom: 2rem; 
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+    cursor: pointer; 
+}
+
+.order{
+    margin-left: 8rem; 
+}
+
+.order p{
+    color: var(--white); 
+    font-size: 1.5rem; 
+}
+
+.order-num{
+    margin-bottom: 0; 
+}
+
+.item{
+    margin-top: 0.5rem; 
+}
+
+/* Side Bar Part: Out for Delivery */
+.title{
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;  
+}
+
+.description{
+    text-transform: uppercase; 
+    font-weight: bold; 
+    color: var(--white); 
+    font-size: 2rem; 
+}
+
+.line{
+    border-top: 0.5px solid var(--grey); 
+    transform: rotate(90deg);
+    margin: 0; 
+    object-fit: cover; 
+}
+
+.out-for-delivery p{
+    margin-left: 8rem; 
+    color: var(--white); 
+    font-size: 1.5rem;
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+}
+
+.recently-completed p{
+    margin-left: 8rem; 
+    color: var(--white); 
+    font-size: 1.5rem; 
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+}
+
+/*Specified Delivery*/
+.specified-delivery{
+    width: 70vw; 
+}
