@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lokah Restaurant Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="restaurant-styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="restaurant-cart-styles.css">
     <script src="main.js"></script>
 </head>
 <body>
@@ -25,15 +25,33 @@
         <div>
     </header>
     <!-- End of Nav Bar -->
-    <div class="restaurant">
-        <div class="restaurant-pic">
-            <div class="restaurant-info">
-                    <h3 class="resto-name">JJ Egg Tarts </h3>
-                    <div class="extra-info">
-                        <p class="dollar-sign">$</p>
-                        <p class="address">Senayan, Kebayoran Baru</p>
-                        <p class="inventory">24 Left!</p>
+    <div class="restaurant-and-cart">
+        <div class="restaurant">
+            <div class="restaurant-pic">
+                <div class="restaurant-info">
+                        <h3 class="resto-name">JJ Egg Tarts </h3>
+                        <div class="extra-info">
+                            <p class="dollar-sign">$</p>
+                            <p class="address">Senayan, Kebayoran Baru</p>
+                            <p class="inventory">24 Left!</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-background">
+            <div class="order">
+                <div class="container">
+                    <img src="images/close-btn.svg" alt="">
+                    <p>Your Order</p>
+                    <div class="dish-order">
+                        <input type="number" name="num-items" id="" min="1">
+                        <div class="order-details">
+                            <p>12 Pack Egg Tart</p>
+                            <p class="price">Rp 100,000</p>
+                        </div>
                     </div>
+                    <a href="#">Next: Checkout</a>
+                </div>
             </div>
         </div>
     </div>
