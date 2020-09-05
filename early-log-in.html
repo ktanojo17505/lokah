@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lokah Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="log-in-styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="log-in-form">
+        <div class="text">
+            <h1 class="logo">Lokah</h1>
+            <h2 class="caption">Welcome Back</h2>
+        </div>
+        <form id="test-form">
+  
+            <div>
+              <label>Company Name</label>
+              <input type="text" name="company_name" placeholder="Ex. Lokah"/>
+            </div>
+          
+            <div>
+              <label>First Name</label>
+              <input type="text" name="first_name" placeholder="Ex. Jack"/>
+            </div>
+            
+            <div>
+              <label>Last Name</label>
+              <input type="text" name="last_name" placeholder="Ex. Harkin"/>
+            </div>
+            
+            <div>
+              <label>E-mail ID</label>
+              <input type="text" name="email" placeholder="Ex. jharking@lokahindonesia.com"/>
+            </div>
+          
+            <div>
+                <label>Phone Number</label>
+                <input type="text" name="number" placeholder="Ex. +62 815 xxxxxxx"/>
+            </div>
+            
+            <div>
+                <label>Location</label>
+                <input type="text" name="location" placeholder="Ex. 221b Baker Street, London"/>
+            </div>
+
+            <div>
+              <button type="submit"id="submit-form">Submit</button>
+            </div>
+          
+          </form>
+    </div>
+    <script>
+        var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbxKJHKx9SejzgOj7w1IJBG9_YyoBgWT9LWLDjMLWk5tOFkfCDSw/exec'
+
+    $('#submit-form').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+    }).success(
+    // do something
+  );
+})
+    </script>
+</body>
+</html>
