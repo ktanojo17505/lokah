@@ -1,47 +1,59 @@
 @import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
 :root{
-    --header-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --nav-link-color: #707070;
-    --header-color: #F69E7B;
-    --main-background-color: #383E56; 
-    --body-font: 'DM Sans', sans-serif;
-    --restaurant-font: 'Noto Sans TC', sans-serif;
-};
+    --main-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --secondary-font: 'PT Serif', serif; 
+    --grey: #707070;
+    --navy-blue: #383E56;
+    --peach: #F69E7B; 
+    --white: #fff;
+}
 
 html{
     font-size: 10px; 
+    font-family: var(--main-font);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
-    background-color: #fff;
+    background-color: var(white);
+    overflow-x: hidden; 
+    max-width: 100%; 
+    margin: 0; 
 }
 
-/* Header */ 
+/* Header */
 header{
     width: 100vw; 
+    height: 10vh; 
     margin: 0%; 
     padding: 0%; 
-    background-color: var(--header-color);
-    padding-top: 5%; 
-    padding-bottom: 5%; 
-    margin-top: 0; 
+    padding-top: 2%; 
 }
 
 
-li, a{
+.nav-link a{
     text-decoration: none; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    font-size: 1.5rem; 
+    color: var(--grey); 
+    font-weight: bold; 
 }
 
+.nav-link{
+    list-style: none; 
+    display: flex;
+    flex-direction: row;  
+}
 
 .logo{
-    font-weight: 550; 
-    font-size: 22px;
-    color: var(--main-background-color);
+    font-weight: bold; 
+    font-size: 3rem;
+    color: var(--peach); 
     cursor: pointer;
-    font-family: var(--header-font);
-    position: relative;
-    left: 20%; 
+    text-decoration: none; 
 }
 
 
@@ -49,39 +61,35 @@ li, a{
     position: relative; 
     align-items: center; 
     display: flex; 
-    justify-content: space-between; 
-    right: 10%; 
+    justify-content: space-between;
+    left: 10%; 
+    top: 20%; 
 }
-
-.nav-link{
-    list-style: none; 
-}
-
-li a{
-    color: var(--nav-link-color);
-    border: 1px solid var(--nav-link-color);
-    border-radius: 50px; 
-    padding: 5px 25px; 
-    font-weight: 500; 
-    font-family: var(--header-font);
-}
-
 
 .nav-link li{
-    display: inline-block; 
-    padding: 0 10px; 
+    padding: 0 1rem; 
     text-transform: uppercase;
-    font-size: 13px; 
+    font-size: 1.3rem; 
     font-weight: bold; 
 }
 
-.nav-link li a{
+ .nav-link li .link{
     transition: all 0.3s ease 0s; 
 }
 
-.nav-link li a:hover{
-    color: var(--header-color);
-    background-color: var(--main-background-color);
+.nav-link li .link:hover{
+    border-bottom: 0.5rem solid var(--peach); 
+} 
+
+.nav-link li .log-in{
+    background-color: var(--peach); 
+    color: white; 
+    border-radius: 3.2rem;  
+    padding: 0.5rem 1.5rem; 
+}
+
+.nav-link li .sign-up{
+    color: var(--peach);
 }
 
 /* Restaurant Info */ 
@@ -91,9 +99,9 @@ li a{
 
 .restaurant-pic{
     width: 100vw; 
-    height: 35vh; 
+    height: 45vh; 
     margin-top: 35px; 
-    background: url(images/restaurant-background-1.jpg); 
+    background: url(images/Dan-ta.png); 
     background-size: cover; 
     background-position: center; 
     display: flex; 
@@ -103,31 +111,50 @@ li a{
 
 .restaurant-info{
     font-family: var(--body-font);
-    width: 50%;
-    background: #fff;  
+    width: 30%;
+    background: #fff; 
+    padding-bottom: 2%;
+    padding-top: 0.5%;  
 }
 
 .resto-name{
-    font-size: 25px; 
+    font-size: 2.5rem; 
+    color: var(--navy-blue); 
+    text-transform: uppercase;  
     margin-bottom: 0; 
+    margin-left: 7%; 
 }
 
 .extra-info{
-    font-size: 10px; 
+    font-size: 1.5rem; 
     font-weight: 200; 
+    margin-left: 7%; 
 }
 
-.more-info{
-    color: #00B000;
-    cursor: pointer; 
+.extra-info .dollar-sign{
+    background-color: black; 
+    border: 1px solid black; 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 1.5rem; 
+    border-radius: 50%; 
+    margin-top: 0.5rem; 
+    margin-bottom:0.5rem; 
 }
 
-.resto-name, .extra-info{
-    margin-left: 30px; 
+.extra-info .address{
+    font-weight: 400; 
+    margin-top: 0.5rem; 
+    margin-bottom:0.5rem; 
+    color: var(--navy-blue); 
 }
 
-.ratings{
-    color: #808080;
+.extra-info .inventory{
+    font-weight: bold; 
+    color: var(--peach);
+    margin-top: 0.5rem; 
+    margin-bottom:0.5rem; 
 }
 
 /* Restaurant Details */
@@ -136,13 +163,13 @@ li a{
     background: #fff;
     margin-top: 50px;  
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-evenly;  
 }
 
 .dish-and-reviews{
     width: 50vw; 
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* border: 3px solid black;  */
 }
 
@@ -158,70 +185,256 @@ li a{
     font-family: var(--restaurant-font);
     display: flex; 
     flex-direction: column; 
-    justify-content: space-between; 
+    justify-content: center; 
 }
 
 .dish-name{
     font-size: 18px; 
     margin-bottom: 2px; 
+    font-weight: 300; 
 }
 
 .dish-details{
     font-size: 15px; 
-    color: #808080; 
+    color: var(--navy-blue); 
+    font-weight: 200; 
+}
+
+.add-button{
+    background-color: var(--navy-blue); 
+    text-transform: uppercase; 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 0.5rem 0.8rem; 
+    width: 20%; 
+}
+
+.cart{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
 }
 
 .price{
-    font-size: 20px; 
-    margin-bottom: 10px; 
+    text-transform: uppercase; 
+    font-size: 1.2rem; 
+    color: var(--navy-blue); 
+    margin-left: 1.5rem; 
+    font-weight: bold; 
 }
 
 .dish img{
     width: 30%; 
+    height: 100%; 
     object-fit: cover; 
 }
 
-.reviews{
+
+.reviews h3{
+    background-color: #EAEAEA;
+    color: var(--navy-blue);
+    font-size: 1.8rem; 
+    padding: 0.5rem; 
+    font-weight: 300; 
+}
+
+.personal-review{
     display: flex; 
     flex-direction: row; 
     justify-content: flex-start; 
-    margin-top: 75px; 
+    align-items: center;
+
 }
 
-.reviews img{
+.personal-review img{
     width: 50px;
-    height: 30px; 
+    height: 100%; 
     object-fit: cover; 
+    margin-right: 1rem; 
 }
 
 .profile-about{
-    font-family: var(--restaurant-font);
     font-size: 12px; 
 }
 
 .person{
     font-weight: bold; 
+    color: var(--navy-blue);
+    margin-bottom: 0; 
 }
 
-.person-info{
-    color: #808080; 
+.person-review{
+    margin-top: 0; 
+    line-height: 1.5rem; 
 }
 
+/* Add Reviews */
+.see-reviews{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-top: 3%; 
+}
+
+.see-reviews a{
+    text-decoration: none; 
+}
+
+.see-reviews .add-btn{
+    color: var(--navy-blue);
+    background-color: var(--peach);
+    border-radius: 2.3rem; 
+    font-size: 1.2rem; 
+    padding: 0.5rem 1rem; 
+}
+
+.pages a{
+    font-weight: bold; 
+    color: var(--navy-blue); 
+    font-size: 1.5rem; 
+    padding: 0.5rem; 
+    transition: all 0.3s ease 0s;
+}
+
+.pages a:hover{
+    color: var(--white);
+    background-color: var(--navy-blue);
+    text-align: center; 
+    border-radius: 50%; 
+    
+}
+
+/* .nav-link li .link{
+    transition: all 0.3s ease 0s; 
+}
+
+.nav-link li .link:hover{
+    border-bottom: 0.5rem solid var(--peach); 
+}  */
+
+/* Chef Image */
+
+.chef-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    background: url(images/chef-1.png);
+    background-size: cover; 
+    width: 40vw;  
+}
+
+.chef-image p{
+    font-weight: 200; 
+    text-align: center; 
+    margin-bottom: 0; 
+    font-size: 2.5rem; 
+    color: var(--white);
+}
+
+/* Chef Info */
 .chef-info{
-    width: 35vw; 
-    margin-right: 40px; 
+    width: 100vw; 
+    background: #fff;
+    margin-top: 15%;  
+    margin-bottom: 30%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+    align-items: center; 
 }
 
-.chef-img{
+.image{
+    width: 50rem; 
+    height: 60rem; 
+    background-color: var(--peach); 
+}
+
+.image img{
     width: 100%; 
-    height: 700px; 
-    object-fit: cover;  
+    height: 100%;
+    position: relative; 
+    left: 5%; 
+    top: 5%; 
 }
 
 .about-chef{
-    font-family: var(--restaurant-font);
-    color: var(--main-background-color);
+    width: 45%; 
+}
+
+.about-chef h1{
+    color: var(--navy-blue);
+    font-size: 4rem; 
     text-align: center; 
-    font-size: 18px; 
-    padding: 5px 10px; 
+}
+
+.about-chef p{
+    color: var(--navy-blue);
+    font-size: 2.5rem; 
+    font-weight: 200; 
+    text-align: center; 
+}
+
+/* Footer */
+footer{
+    width: 100vw; 
+    background-color: lavender; 
+    margin-top: 5%; 
+    padding-bottom: 10rem; 
+}
+
+.footer-1{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+    position: relative; 
+    left: 5%;
+    padding-top: 5%; 
+}
+
+.footer-1 .logo{
+    margin-right: 5%
+}
+
+.logo{
+    margin-top: 0; 
+}
+
+.list-container{
+    margin-left: 3%; 
+    margin-right: 3%; 
+    margin-top: 0; 
+}
+
+.subject{
+    color: var(--peach); 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.list{
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.list li{
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+}
+
+.list li a{
+    text-decoration: none; 
+    font-weight: bold; 
+    color: var(--white); 
+    font-size: 1.2rem; 
+}
+
+.footer-2{
+    padding-left: 2%;
+    padding-top: 2%; 
+}
+
+.footer-line{
+    margin-bottom: 0; 
 }
