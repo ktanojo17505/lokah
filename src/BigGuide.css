@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* The Big Guide */
+.food-guide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  position: relative;
+  left: 15%;
+  margin-top: 5%;
+}
+
+.the-big-guide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.the-big-guide img {
+  width: 100%;
+  object-fit: cover;
+  z-index: 50;
+}
+
+.the-big-guide h4 {
+  background-color: var(--peach);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  width: 30%;
+  margin-bottom: -3%;
+  z-index: 100;
+  position: relative;
+  left: 35%;
+  border-radius: 7.1rem;
+  cursor: none;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.article-titles {
+  font-family: var(--secondary-font);
+  width: 75%;
+}
+
+.article-titles h4 {
+  font-size: 3.5rem;
+  color: var(--navy-blue);
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.article-titles p {
+  font-size: 1.2rem;
+  color: var(--navy-blue);
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.article-titles a {
+  font-size: 1.2rem;
+  color: var(--peach);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.article-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 12vh;
+  margin: 2rem 0;
+}
+
+.article-box img {
+  object-fit: contain;
+}
+
+.article-box p {
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: var(--navy-blue);
+}

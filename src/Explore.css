@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Food Section  */
+.explore-foods {
+  position: relative;
+  left: 5%;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-foods h3 {
+  float: left;
+  font-size: 2.5rem;
+  color: var(--peach);
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.food-grid {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-row-gap: 5%;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+}
+
+.food-item img {
+  object-fit: cover;
+  width: 100%;
+}
+.food-name {
+  text-transform: uppercase;
+  color: var(--navy-blue);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.food-description {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.buy-button {
+  background-color: var(--navy-blue);
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 0.8rem;
+}
+
+.ratings {
+  color: var(--navy-blue);
+}
+
+.see-more-button {
+  width: 5%;
+  margin-top: 10%;
+  text-decoration: none;
+  background-color: var(--peach);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  position: relative;
+  left: 39%;
+  cursor: pointer;
+}

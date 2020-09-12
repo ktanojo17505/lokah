@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Become a Partner */
+.become-partner {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  position: relative;
+  left: 10%;
+  margin-bottom: 10%;
+}
+
+.highlighted {
+  font-size: 5rem;
+  color: var(--navy-blue);
+  background-color: var(--peach);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.become-partner p {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: var(--navy-blue);
+  text-align: center;
+}
+
+.become-partner a {
+  color: var(--white);
+  background-color: var(--peach);
+  border-radius: 7.1rem;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}

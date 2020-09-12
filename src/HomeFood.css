@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Home Cooked Food */
+.home-cooked-food {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-text {
+  width: 40vw;
+  position: relative;
+  left: 5%;
+  border-bottom: 3.5rem solid var(--navy-blue);
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.image-text h1 {
+  color: var(--navy-blue);
+  font-size: 3.5rem;
+}
+
+.image-text span {
+  color: var(--peach);
+}
+
+.image-text p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.image-text button {
+  color: var(--white);
+  background-color: var(--peach);
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  letter-spacing: 0.48px;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  font-weight: 200;
+}
+
+.image-grid {
+  width: 40vw;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 12%;
+}
+
+.image-grid-one .image-one,
+.image-grid-one .image-two {
+  float: right;
+}
+
+.image-grid-one .image-one {
+  margin-bottom: 1.7rem;
+  margin-right: 1.7rem;
+}
+
+.image-grid-one .image-two {
+  margin-right: 1.7rem;
+}
+
+.image-grid-two .image-two {
+  margin-bottom: 1.7rem;
+}
+
+.image-one {
+  width: 25rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+.image-two {
+  width: 28rem;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+.image-grid-one {
+  position: relative;
+  top: 10%;
+}
+
+.image-grid-two {
+  position: relative;
+  bottom: 10%;
+}
+
+.line {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 0.5px solid var(--grey);
+}
