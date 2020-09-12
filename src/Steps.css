@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Bubble Section */
+.steps {
+  width: 100vw;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps h1 {
+  color: var(--peach);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 10%;
+}
+.bubble-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* margin-left: 5%; 
+    margin-right: 5%;  */
+}
+
+.bubble {
+  width: 23vw;
+  object-fit: contain;
+}
+
+.caption {
+  color: var(--peach);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.description {
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+.bubble img {
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Landing */
+.landing {
+  width: 100vw;
+  height: 85vh;
+  background: url(images/landing.png);
+  background-size: cover;
+  repeat: no-repeat;
+  background-position: left center;
+  margin: 0;
+}
+
+.text {
+  position: relative;
+  left: 5%;
+  top: 30%;
+  width: 30%;
+}
+
+.landing h1 {
+  font-size: 3.5rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.landing span {
+  color: var(--peach);
+}
+
+.text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.landing button {
+  color: var(--white);
+  background-color: var(--navy-blue);
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  letter-spacing: 0.48px;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  margin-top: 5%;
+  font-weight: 200;
+}
