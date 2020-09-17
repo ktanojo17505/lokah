@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.questionArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 45vw;
+  padding: 0.8rem;
+  border: 1px solid var(--grey);
+  border-radius: 0.3rem;
+}
+
+.button {
+  width: 15vw;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0.5rem 3.5rem;
+  background-color: var(--peach);
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.3rem;
+  position: relative;
+  left: 68%;
+}

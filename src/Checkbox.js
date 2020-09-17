@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import "./CheckBox.css";
 
 class CheckBox extends Component {
   constructor(props) {
