@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Location.css"
+import "./Location.css";
 
 class Location extends Component {
   constructor(props) {
@@ -19,60 +19,51 @@ class Location extends Component {
 
   render() {
     const { formTwo, handleChange } = this.props;
-    return (  
-      <form style = {{backgroundColor: "#383e56", color: "white", padding: 25 + 'px', width: 50 + '%', marginLeft: 22 + '%', borderRadius: 10 + 'px'}}>
-        <div class = "details" style = {{textAlign: "center", fontFamily: "serif", fontSize: 20 + 'px'}}>
-          <div className="location-info">
-            <label style={{fontFamily: "serif", paddingRight: 10 + 'px'}}>Province</label>
+    return (
+      <form className="location-container">
+        <div className="location-questionArea">
+          <div className="location-question">
+            <label>Province</label>
             <input
+              className="location-input"
               type="text"
               value={formTwo.province}
               onChange={handleChange("province")}
-              style = {{
-                borderRadius: 4 + 'px',
-                padding: 4 + 'px',
-                marginRight: 10 + 'px'
-              }}
             ></input>
-            <label style={{fontFamily: "serif", paddingRight: 10 + 'px'}}>City/Municipality</label>
+          </div>
+          <div className="location-question">
+            <label>City/Municipality</label>
             <input
+              className="location-input"
               type="text"
               value={formTwo.city}
               onChange={handleChange("city")}
-              style = {{
-                borderRadius: 4 + 'px',
-                padding: 4 + 'px',
-                marginRight: 10 + 'px'
-              }}
             ></input>
-            <label style={{fontFamily: "serif", paddingRight: 10 + 'px'}}>Barangay</label>
+          </div>
+          <div className="location-question">
+            <label>Barangay</label>
             <input
+              className="location-input"
               type="text"
               value={formTwo.barangay}
               onChange={handleChange("barangay")}
-              style = {{
-                borderRadius: 4 + 'px',
-                padding: 4 + 'px',
-                marginRight: 10 + 'px'
-              }}
             ></input>
           </div>
-          <div className="address" style = {{marginTop: 10 + 'px'}}>
-            <label style={{fontFamily: "serif", paddingRight: 10 + 'px'}}>Village / Subdivision / Area / Condominium Building</label>
+        </div>
+        <div className=".location-questionArea">
+          <div className="location-big-question">
+            <label>Village / Subdivision / Area / Condominium Building</label>
             <input
+              className="location-big-input"
+              className="village"
               type="text"
               value={formTwo.area}
               onChange={handleChange("area")}
-              style = {{
-                borderRadius: 4 + 'px',
-                padding: 4 + 'px',
-                marginRight: 10 + 'px'
-              }}
             ></input>
           </div>
-          <button onClick={this.back} style = {{marginTop: 10 + 'px', marginRight: 10 + 'px', backgroundColor: "#f69e7b", color: "white", paddingLeft:30 + 'px', paddingRight: 30 + 'px', paddingBottom: 15 + 'px', paddingTop: 15 + 'px', textAlign: "center", fontSize: 16 + 'px', border: 0 + 'px', borderRadius: 10 + 'px'}}><b>Back</b></button>
-          <button onClick={this.saveAndContinue} style = {{marginTop: 10 + 'px', backgroundColor: "#f69e7b", color: "white", paddingLeft:30 + 'px', paddingRight: 30 + 'px', paddingBottom: 15 + 'px', paddingTop: 15 + 'px', textAlign: "center", fontSize: 16 + 'px', border: 0 + 'px', borderRadius: 10 + 'px'}}><b>Next</b></button>
         </div>
+        <button onClick={this.back}>Back</button>
+        <button onClick={this.saveAndContinue}>Next</button>
       </form>
     );
   }

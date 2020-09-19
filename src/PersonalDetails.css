@@ -16,17 +16,53 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  background-color: var(white);
-  overflow-x: hidden;
-  max-width: 100%;
-  margin: 0;
+.personalDetails {
+  background-color: var(--navy-blue);
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  padding: 25px;
 }
 
-details {
-    background-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
-    display: flex;
-    font-size: 30px;
+.questionArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  font-family: var(--main-font);
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 45vw;
+  padding: 0.8rem;
+  border: 1px solid var(--grey);
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+.button {
+  width: 15vw;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1rem 3.5rem;
+  background-color: var(--peach);
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.8rem;
 }

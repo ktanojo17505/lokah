@@ -129,7 +129,6 @@ class Form extends Component {
     } = this.state;
     const formOne = { firstName, lastName, email, mobile };
     const formTwo = { province, city, barangay, area };
-
     //switch (step) {
     if (step == 1) {
       return (
