@@ -17,7 +17,12 @@ html {
 }
 
 .location-container {
-  width: 90%;
+  background-color: var(--navy-blue);
+  color: white;
+  margin-left: 1.5%;
+  width: 95%;
+  border-radius: 20px;
+  padding: 25px;
 }
 
 .location-questionArea {
@@ -34,6 +39,15 @@ html {
   width: 30%;
 }
 
+
+.location-label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  font-family: var(--main-font);
+  margin-bottom: 1rem;
+}
+
 .location-input {
   padding: 0.8rem;
   border: 1px solid var(--grey);
@@ -45,6 +59,31 @@ html {
 }
 
 .location-big-input {
-  width: 100%;
+  width: 95%;
+  margin-left: 1%;
   padding: 0.8rem;
+}
+
+.location-big-label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  font-family: var(--main-font);
+  margin-bottom: 1rem;
+  margin-left: 37%;
+}
+
+.location-button {
+  width: 15%;
+  margin-top: 3rem;
+  text-align: center;
+  margin-left: 30%;
+  padding: 1rem 3.5rem;
+  background-color: var(--peach);
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.8rem;
 }

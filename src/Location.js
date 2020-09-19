@@ -23,7 +23,7 @@ class Location extends Component {
       <form className="location-container">
         <div className="location-questionArea">
           <div className="location-question">
-            <label>Province</label>
+            <label className="location-label">Province</label>
             <input
               className="location-input"
               type="text"
@@ -32,7 +32,7 @@ class Location extends Component {
             ></input>
           </div>
           <div className="location-question">
-            <label>City/Municipality</label>
+            <label className="location-label">City/Municipality</label>
             <input
               className="location-input"
               type="text"
@@ -41,7 +41,7 @@ class Location extends Component {
             ></input>
           </div>
           <div className="location-question">
-            <label>Barangay</label>
+            <label className="location-label">Barangay</label>
             <input
               className="location-input"
               type="text"
@@ -50,20 +50,19 @@ class Location extends Component {
             ></input>
           </div>
         </div>
-        <div className=".location-questionArea">
+        <div className="location-questionArea">
           <div className="location-big-question">
-            <label>Village / Subdivision / Area / Condominium Building</label>
+            <label className="location-big-label">Village / Subdivision / Area / Condominium Building</label>
             <input
               className="location-big-input"
-              className="village"
               type="text"
               value={formTwo.area}
               onChange={handleChange("area")}
             ></input>
           </div>
         </div>
-        <button onClick={this.back}>Back</button>
-        <button onClick={this.saveAndContinue}>Next</button>
+        <button className="location-button" onClick={this.back}>Back</button>
+        <button className="location-button" onClick={this.saveAndContinue} style={{marginLeft: 10 + '%'}}>Next</button>
       </form>
     );
   }
