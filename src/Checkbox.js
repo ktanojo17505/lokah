@@ -10,13 +10,18 @@ class CheckBox extends Component {
     console.log("option ", option.id);
     return (
       <li>
-        <label>{formNumber}</label>
+        <label style={{fontFamily: "serif", paddingRight: 10 + 'px'}}>{formNumber}</label>
         <input
           onChange={handleCheck({ formNumber })}
           type="checkbox"
           checked={option.isChecked[formNumber]}
           value={option.value}
           id={option.value}
+          style = {{
+            borderRadius: 4 + 'px',
+            padding: 4 + 'px',
+            marginRight: 10 + 'px'
+          }}
         ></input>
         <label for={option.value}>{option.text}</label>
       </li>
