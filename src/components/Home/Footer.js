@@ -6,11 +6,11 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <div class="footer-1">
-          <p class="logo">Lokah</p>
-          <div class="list-container">
-            <p class="subject">Lokah</p>
-            <ul class="list">
+        <div className="footer-1">
+          <p className="logo">Lokah</p>
+          <div className="list-container">
+            <p className="subject">Lokah</p>
+            <ul className="list">
               <li>
                 <a href="#">About</a>
               </li>
@@ -25,9 +25,9 @@ class Footer extends Component {
               </li>
             </ul>
           </div>
-          <div class="list-container">
-            <p class="subject">Merchants</p>
-            <ul class="list">
+          <div className="list-container">
+            <p className="subject">Merchants</p>
+            <ul className="list">
               <li>
                 <a href="#">Sell on Lokah</a>
               </li>
@@ -35,8 +35,8 @@ class Footer extends Component {
                 <a href="#">Home Businesses</a>
               </li>
             </ul>
-            <p class="subject">Support</p>
-            <ul class="list">
+            <p className="subject">Support</p>
+            <ul className="list">
               <li>
                 <a href="#">Customer Help</a>
               </li>
@@ -45,9 +45,9 @@ class Footer extends Component {
               </li>
             </ul>
           </div>
-          <div class="list-container">
-            <p class="subject">Follow Us</p>
-            <ul class="list">
+          <div className="list-container">
+            <p className="subject">Follow Us</p>
+            <ul className="list">
               <li>
                 <a href="#">Instagram</a>
               </li>
@@ -60,18 +60,18 @@ class Footer extends Component {
             </ul>
           </div>
         </div>
-        <hr class="line" />
-        <div class="footer-2">
-          <div class="list-container">
-            <p class="subject">Our Cities</p>
-            <ul class="list">
+        <hr className="line" />
+        <div className="footer-2">
+          <div className="list-container">
+            <p className="subject">Our Cities</p>
+            <ul className="list">
               <li>
                 <a href="#">Jakarta</a>
               </li>
             </ul>
           </div>
         </div>
-        <hr class="line footer-line" />
+        <hr className="line footer-line" />
       </footer>
     );
   }

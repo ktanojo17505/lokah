@@ -27,7 +27,7 @@ body {
 .landing {
   width: 100vw;
   height: 85vh;
-  background: url(images/landing.png);
+  background: url(../../images/landing.png);
   background-size: cover;
   repeat: no-repeat;
   background-position: left center;

@@ -5,8 +5,8 @@ class Landing extends Component {
   state = {};
   render() {
     return (
-      <div class="landing">
-        <div class="text">
+      <div className="landing">
+        <div className="text">
           <h1>
             Nothing beats
             <br />

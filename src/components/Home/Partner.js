@@ -5,8 +5,8 @@ class Partner extends Component {
   state = {};
   render() {
     return (
-      <div class="become-partner">
-        <h1 class="highlighted">Want to Become a Partner?</h1>
+      <div className="become-partner">
+        <h1 className="highlighted">Want to Become a Partner?</h1>
         <p>Read more about partnering with Lokah</p>
         <a href="#">Go to become a partner</a>
       </div>

@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./HomeFood.css";
-import foodimg1 from "./images/food-image-1.jpg";
-import foodimg2 from "./images/food-image-3.jpg";
+import foodimg1 from "../../images/food-image-1.jpg";
+import foodimg2 from "../../images/food-image-3.jpg";
 
 class HomeFood extends Component {
   state = {};
   render() {
     return (
-      <div class="home-cooked-food">
-        <div class="image-text">
+      <div className="home-cooked-food">
+        <div className="image-text">
           <h1>
             The best food will always be home cooked with
             <span>love</span>, <span>passion </span> and <span>dedication</span>
@@ -21,14 +21,14 @@ class HomeFood extends Component {
           </p>
           <button>Learn More</button>
         </div>
-        <div class="image-grid">
-          <div class="image-grid-one">
-            <img src={foodimg1} class="image-one" alt="" />
-            <img src={foodimg2} class="image-two" alt="" />
+        <div className="image-grid">
+          <div className="image-grid-one">
+            <img src={foodimg1} className="image-one" alt="" />
+            <img src={foodimg2} className="image-two" alt="" />
           </div>
-          <div class="image-grid-two">
-            <img src={foodimg2} class="image-two" alt="" />
-            <img src={foodimg1} class="image-one" alt="" />
+          <div className="image-grid-two">
+            <img src={foodimg2} className="image-two" alt="" />
+            <img src={foodimg1} className="image-one" alt="" />
           </div>
         </div>
       </div>
