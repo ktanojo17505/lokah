@@ -11,7 +11,7 @@ import Header from "../src/components/Header";
 // import Explore from "./components/Home/Explore";
 // import BigGuide from "./components/Home/BigGuide";
 // import Partner from "./components/Home/Partner";
-// import Footer from "./components/Home/Footer";
+import Footer from "./components/Home/Footer";
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
       <Partner />
       <Form />
       <Footer /> */}
+      <Footer />
     </div>
   );
 }

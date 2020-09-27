@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+.FoodGrid-food-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+}
+
+.FoodGrid-food-item img {
+  object-fit: cover;
+  width: 100%;
+}
+.FoodGrid-food-name {
+  text-transform: uppercase;
+  color: var(--navy-blue);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.FoodGrid-food-description {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.FoodGrid-buy-button {
+  background-color: var(--navy-blue);
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 0.8rem;
+}
+
+.FoodGrid-ratings {
+  color: var(--navy-blue);
+}

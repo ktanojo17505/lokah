@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 10vh;
+  margin: 0%;
+  padding: 0%;
+  padding-top: 2%;
+}
+
+.nav-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--peach);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 10%;
+  top: 20%;
+}
+
+.nav-link li {
+  padding: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-link li .link {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-link li .link:hover {
+  border-bottom: 0.5rem solid var(--peach);
+}
+
+.nav-link li .log-in {
+  background-color: var(--peach);
+  color: white;
+  border-radius: 3.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-link li .sign-up {
+  color: var(--peach);
+}
+
+/* Become Partner */
+.become-partner-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.become-partner-text {
+  width: 50%;
+  margin-right: 5%;
+}
+
+.become-partner-text h1 {
+  font-size: 7rem;
+  color: var(--navy-blue);
+}
+
+.become-partner-text span {
+  color: var(--peach);
+}
+
+.become-partner-text p {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--navy-blue);
+  margin-bottom: 10%;
+}
+
+.get-started-button {
+  background-color: var(--peach);
+  color: var(--white);
+  border-radius: 3.2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  /* position: relative; 
+    left: 25%;  */
+}
+
+.become-partner-text .get-started-button {
+  position: relative;
+  left: 25%;
+}
+
+.become-partner-img {
+  width: 50rem;
+  height: 50rem;
+  background-color: var(--peach);
+}
+
+.become-partner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  right: 5%;
+  top: 5%;
+}
+
+/* Why Lokah */
+.why-lokah {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.why-lokah h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--navy-blue);
+}
+
+.why-lokah p {
+  font-size: 5rem;
+  font-weight: 200;
+  color: var(--navy-blue);
+}
+
+.why-lokah span {
+  border-bottom: 0.7rem solid var(--peach);
+}
+
+/* Reasons to join Lokah */
+.left,
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.image-left {
+  width: 50rem;
+  height: 71rem;
+  background-color: var(--peach);
+}
+
+.image-left img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+
+.right {
+  margin-top: 25%;
+}
+
+.text-right {
+  color: var(--navy-blue);
+  width: 45%;
+  margin-left: 10%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid var(--grey);
+}
+
+.text-right h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.text-right p {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.image-right {
+  width: 50rem;
+  height: 71rem;
+  background-color: var(--navy-blue);
+}
+
+.image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  right: 5%;
+  top: 5%;
+}
+
+.text-left {
+  color: var(--navy-blue);
+  width: 45%;
+  margin-right: 10%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid var(--grey);
+}
+
+.text-left h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.text-left p {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.divider {
+  height: 65vh;
+  background-color: var(--navy-blue);
+  margin-top: 25%;
+}
+
+.join-lokah {
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+/* Be Part Lokah */
+.be-part-lokah {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.be-part-lokah h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--navy-blue);
+  margin-bottom: 5%;
+}
+
+.be-part-lokah span {
+  border-bottom: 0.7rem solid var(--peach);
+}
+
+/* Footer */
+footer {
+  width: 100vw;
+  background-color: lavender;
+  margin-top: 5%;
+  padding-bottom: 10rem;
+}
+
+.footer-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  left: 5%;
+  padding-top: 5%;
+}
+
+.footer-1 .logo {
+  margin-right: 5%;
+}
+
+.logo {
+  margin-top: 0;
+}
+
+.list-container {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0;
+}
+
+.subject {
+  color: var(--peach);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.list li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.footer-2 {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.footer-line {
+  margin-bottom: 0;
+}

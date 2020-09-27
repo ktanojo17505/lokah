@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+:root {
+  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: "PT Serif", serif;
+  --grey: #707070;
+  --navy-blue: #383e56;
+  --peach: #f69e7b;
+  --white: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--main-font);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(white);
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+/* Landing */
+.category-landing {
+  width: 100vw;
+  height: 85vh;
+  background: url(../../images/pancake-category.png);
+  background-size: cover;
+  repeat: no-repeat;
+  background-position: left center;
+  margin: 0;
+}
+
+.category-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 5%;
+  top: 30%;
+}
+
+.category-text h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+.category-text span {
+  color: var(--peach);
+}
+
+.category-text input {
+  padding: 1rem 4rem;
+  width: 30rem;
+  border-radius: 2.5rem;
+  border: none;
+  font-size: 1.2rem;
+}
+
+/* Browse Food Categories */
+.category-browse-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.category-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.category-browse-categories p {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+.category-browse {
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* Food Categories */
+.category-food-grid {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.category-available-now h2,
+.category-preorder-this-week h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.category-available-now h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.category-preorder-this-week h2 {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
