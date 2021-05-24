@@ -104,7 +104,6 @@ class Form extends Component {
   };
 
   handleCheck = input => event => {
-    console.log("step ", input);
     let index = input.formNumber;
     let arr = this.state.checkBoxForm;
     arr.forEach(item => {
@@ -148,7 +147,6 @@ class Form extends Component {
         />
       );
     } else {
-      console.log("step ", step);
       return (
         <CheckBoxContainer
           handleCheck={this.handleCheck}

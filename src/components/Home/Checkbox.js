@@ -8,10 +8,8 @@ class CheckBox extends Component {
   }
   render() {
     const { option, handleCheck, formNumber } = this.props;
-    console.log("option ", option.id);
     return (
-      <li>
-        <label style={{fontFamily: "serif", paddingRight: 10 + 'px'}}>{formNumber}</label>
+      <li style={{listStyleType: 'none'}}>
         <input
           onChange={handleCheck({ formNumber })}
           type="checkbox"

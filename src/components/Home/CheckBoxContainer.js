@@ -23,7 +23,6 @@ class CheckBoxContainer extends Component {
     const formName = "selling";
     return (
       <form style = {{backgroundColor: "#383e56", color: "white", padding: 25 + 'px', width: 50 + '%', marginLeft: 22 + '%', borderRadius: 10 + 'px'}}>
-        <label style={{fontFamily: "serif", paddingRight: 10 + 'px'}}>{step}</label>
         {formType.map((item, index) => (
           <CheckBox
             key={index}

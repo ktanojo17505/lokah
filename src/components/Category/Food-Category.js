@@ -10,7 +10,7 @@ class FoodCategory extends Component {
     const { food } = this.props;
     return (
       <div className="Food-Category">
-        <img src={require(`../../images/category/${food}.png`)}></img>
+        <img src={require(`../../images/category/${food.toLowerCase()}.png`)}></img>
         <p>{food}</p>
       </div>
     );

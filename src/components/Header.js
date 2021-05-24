@@ -21,19 +21,13 @@ class Header extends Component {
                 <Link to="/">Our Food</Link>
               </li>
               <li>
-                <Link to="/Category">Community</Link>
+                <Link to="/Category">Category</Link>
               </li>
               <li>
                 <Link to="/About-us">About Us</Link>
               </li>
               <li>
                 <Link to="/Partner">Become a Partner</Link>
-              </li>
-              <li>
-                <Link to="/Product">Log In</Link>
-              </li>
-              <li>
-                <Link to="/">Sign Up</Link>
               </li>
             </nav>
           </div>

@@ -67,6 +67,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: 2rem 0;  
 }
 
 .article-titles {
@@ -103,7 +104,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   height: 12vh;
-  margin: 2rem 0;
+  margin: 2rem 3rem;
 }
 
 .article-box img {
