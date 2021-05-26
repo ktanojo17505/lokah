@@ -4,7 +4,7 @@ import "./Header.css";
 import Home from "../components/Home/Home";
 import AboutUs from "../components/About-us/About-us";
 import Category from "../components/Category/Category";
-import Product from "../components/Product/Product";
+// import Product from "../components/Product/Product";
 import BecomePartner from "../components/Become-Partner/Become-Partner";
 
 class Header extends Component {
@@ -44,9 +44,6 @@ class Header extends Component {
           </Route>
           <Route path="/Partner" exact component={BecomePartner}>
             {/* <BecomePartner /> */}
-          </Route>
-          <Route path="/Product" exact component={Product}>
-            {/* <Product /> */}
           </Route>
         </Switch>
       </Router>

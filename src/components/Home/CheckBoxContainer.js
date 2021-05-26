@@ -8,18 +8,18 @@ class CheckBoxContainer extends Component {
     this.state = {};
   }
 
-  saveAndContinue = e => {
-    e.preventDefault();
-    this.props.nextStep();
-  };
-
   back = e => {
     e.preventDefault();
     this.props.prevStep();
   };
 
+  submit = e => {
+    e.preventDefault();
+    this.props.handleSubmit();
+  }
+
   render() {
-    const { handleCheck, formType, step } = this.props;
+    const { handleCheck, formType, handleSubmit, step } = this.props;
     const formName = "selling";
     return (
       <form style = {{backgroundColor: "#383e56", color: "white", padding: 25 + 'px', width: 50 + '%', marginLeft: 22 + '%', borderRadius: 10 + 'px'}}>
@@ -32,7 +32,7 @@ class CheckBoxContainer extends Component {
           />
         ))}
           <button onClick={this.back} style = {{marginTop: 10 + 'px', marginRight: 10 + 'px', backgroundColor: "#f69e7b", color: "white", paddingLeft:30 + 'px', paddingRight: 30 + 'px', paddingBottom: 15 + 'px', paddingTop: 15 + 'px', textAlign: "center", fontSize: 16 + 'px', border: 0 + 'px', borderRadius: 10 + 'px'}}><b>Back</b></button>
-          <button onClick={this.saveAndContinue} style = {{marginTop: 10 + 'px', backgroundColor: "#f69e7b", color: "white", paddingLeft:30 + 'px', paddingRight: 30 + 'px', paddingBottom: 15 + 'px', paddingTop: 15 + 'px', textAlign: "center", fontSize: 16 + 'px', border: 0 + 'px', borderRadius: 10 + 'px'}}><b>Save</b></button>
+          <button onClick={this.submit} style = {{marginTop: 10 + 'px', backgroundColor: "#f69e7b", color: "white", paddingLeft:30 + 'px', paddingRight: 30 + 'px', paddingBottom: 15 + 'px', paddingTop: 15 + 'px', textAlign: "center", fontSize: 16 + 'px', border: 0 + 'px', borderRadius: 10 + 'px'}}><b>Submit</b></button>
       </form>
     );
   }

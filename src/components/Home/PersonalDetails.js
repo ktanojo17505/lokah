@@ -4,16 +4,20 @@ import "./PersonalDetails.css";
 class PersonalDetails extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      fields: {},
+    };
   }
 
   saveAndContinue = e => {
     e.preventDefault();
-    this.props.nextStep();
+    if (this.props.handleValidation()){
+      this.props.nextStep();
+    }
   };
 
   render() {
-    const { formOne, handleChange } = this.props;
+    const { formOne, handleChange, errors } = this.props;
     return (
       <form className="personalDetails">
         <div className="questionArea">
@@ -23,8 +27,9 @@ class PersonalDetails extends Component {
               className="input"
               type="text"
               value={formOne.firstName}
-              onChange={handleChange("firstName")}
+              onChange= {handleChange("firstName")}
             ></input>
+            <div>{errors.firstName}</div>
           </div>
           <div className="question">
             <label className="label">Last Name</label>
@@ -34,6 +39,7 @@ class PersonalDetails extends Component {
               value={formOne.lastName}
               onChange={handleChange("lastName")}
             ></input>
+            <div>{errors.lastName}</div>
           </div>
         </div>
         <div className="questionArea">
@@ -45,6 +51,7 @@ class PersonalDetails extends Component {
               value={formOne.email}
               onChange={handleChange("email")}
             ></input>
+            <div>{errors.email}</div>
           </div>
           <div className="question">
             <label className="label">Mobile Number</label>
