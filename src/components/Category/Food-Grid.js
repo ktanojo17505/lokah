@@ -16,7 +16,7 @@ class FoodGrid extends Component {
         <a className="FoodGrid-buy-button" href="#">
           Buy Now
         </a>
-        <p className="FoodGrid-ratings">{rating}</p>
+        <p className="FoodGrid-ratings">{rating} Ratings</p>
       </div>
     );
   }

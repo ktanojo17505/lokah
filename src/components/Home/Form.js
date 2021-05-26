@@ -146,7 +146,6 @@ class Form extends Component {
   };
 
   handleSubmit = () => {
-    console.log("submitted form");
     db.collection('contacts').doc(this.state.email).set({
       firstName: this.state.firstName,
       lastName: this.state.lastName,
@@ -158,6 +157,7 @@ class Form extends Component {
       area: this.state.area,
       checkBoxForm: this.state.checkBoxForm
     })
+    alert("Successfully submitted form! Note if you have submitted a form before with the same email information the previously submitted form will be overwritten with the most recent information")
   }
 
   render() {
