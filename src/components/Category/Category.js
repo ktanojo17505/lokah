@@ -3,7 +3,6 @@ import Partner from "../../components/Home/Partner";
 import FoodCategory from "../Category/Food-Category";
 import FoodGrid from "../Category/Food-Grid";
 import "./Category.css";
-// import { isObjectTypeIndexer } from "@babel/types";
 
 class Category extends Component {
   constructor(props) {
